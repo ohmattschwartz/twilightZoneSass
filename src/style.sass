@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash')
+$twilight: 'Ravi Prakash'
+$twilightColor: #838bad
+$zoneColor: #81c8f7
+$twilightShadow: 2px 2px 5px #81c8f7
+
+@mixin main-content
+  font-size: 12px
+  font-family: $twilight
+  color: $zoneColor
+  padding-top: 10px
+  padding-bottom: 10px
+  margin-left: 20px
+  margin-right: 20px
+  border-bottom: 1px solid $twilightColor
+
+body
+  color: white
+  background-color: black
+  background-image: url('https://i.ytimg.com/vi/voWpbz1De_M/maxresdefault.jpg')
+  background-size: contain
+  margin: 0px
+
+header
+
+  img
+    height: 50px
+    width: 150px
+    display: flex
+    margin-left: auto
+    margin-right: auto
+    padding-top: 20px
+
+  h1
+    text-align: center
+    font-family: $twilight
+    font-size: 65px
+    margin: 0px
+    color: $twilightColor
+    text-shadow: $twilightShadow
+
+  h2
+    text-align: center
+    font-family: $twilight
+    font-size: 20px
+    margin: 0px
+    color: $zoneColor
+    border-top: 2px dashed $twilightColor
+    border-bottom: 2px dashed $twilightColor
+
+.icons
+  border-bottom: 1px solid $twilightColor
+
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  img
+    height: 60px
+    width: 45px
+    padding-right: 40px
+
+.intro
+  @include main-content
+
+.serlingHeader
+
+  ul
+    list-style: none
+    display: flex
+    justify-content: space-around
+    padding-right: 30px
+
+  img
+    height: 80px
+
+  h3
+    font-size: 40px
+    font-family: $twilight
+    color: $twilightColor
+    text-shadow: $twilightShadow
+    margin: 16px
+    text-align: center
+
+.rodSerling
+  @include main-content
+  @extend .rodSerling
+  border-width: medium
+
+  ul
+    font-size: 14px
+    color: $twilightColor
+    text-shadow: $twilightShadow
+    font-family: $twilight
+    list-style: square
+    margin-top: 0px
+    padding-bottom: 20px
+
+.mathesonHeader
+
+  ul
+    list-style: none
+    display: flex
+    justify-content: space-around
+    padding-right: 30px
+
+  img
+    height: 80px
+
+  h3
+    font-size: 40px
+    font-family: $twilight
+    color: $twilightColor
+    text-shadow: $twilightShadow
+    margin: 16px
+    text-align: center
+
+.richardMatheson
+  @extend .rodSerling
+  border-width: medium
+
+.beaumontHeader
+
+  ul
+    list-style: none
+    display: flex
+    justify-content: space-around
+    padding-right: 30px
+
+  img
+    height: 80px
+
+  h3
+    font-size: 40px
+    font-family: $twilight
+    color: $twilightColor
+    text-shadow: $twilightShadow
+    margin: 16px
+    text-align: center
+
+.charlesBeaumont
+  @extend .rodSerling
+  border-color: transparent
+
+footer
+
+  ul
+   list-style: none
+   display: flex
+   justify-content: space-around
+   background-color: $twilightColor
+   margin-bottom: 0
+
+
+  li
+   font-size: 15px
+   font-family: $twilight
+   color: $zoneColor
+   padding-top: 0px
+   padding-bottom: 0px
+   margin-left: 0px
+   margin-right: 18px
+   margin-top: 5px
+
+   img
+    height: 20px
